@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing拯救了我们的布局</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.wrapper{
+			width: 960px;
+			margin-left:auto;
+			margin-right: auto;
+			color: #fff;
+			font-size: 30px;
+			text-align: center;
+
+		}
+		header{
+			height: 100px;
+			width: 100%;
+			background: #38382e;
+			padding: 10px;
+			border:10px solid red;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin-bottom: 5px;	
+		}
+		nav{
+			height: 50px;
+			width: 100%;
+			background: #363636;
+			margin-bottom: 10px;
+			border:10px solid red;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+		article{
+			float: left;
+			width: 720px;
+			height: 300px;
+			background: #c8ca30;
+			margin-bottom: 10px;
+			padding: 10px;
+			border:10px solid red;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		aside{
+			float: left;
+			width: 220px;
+			height: 300px;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			background: #5d33cf;
+			padding: 10px;
+			border:10px solid red;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		footer{
+			background: #cc4ad5;
+			height: 100px;
+			clear: both;
+			padding: 10px;
+			border:10px solid red;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		textarea{
+			resize: horizontal;
+			margin-top: 15px;
+			border-radius: 8px;
+			border:8px solid red;
+		}
+		article div{
+			width: 200px;
+			margin:15px auto;
+			outline:10px solid #ccc;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>页眉</header>
+        <nav>导航</nav>
+	    <aside>侧边栏</aside>
+        <article>内容
+            <form action="#" id="resum" method="post">
+                <textarea name="text" cols="20" rows="3" placeholder="修改文本域随意调整大小的功能"></textarea>
+            </form>
+            <div>outline模仿外边框效果</div>
+        </article>
+	    <footer>页脚</footer>
+	</div>
+</body>
+</html>

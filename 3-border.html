@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3-border</title>
+	<style type="text/css">
+		.bor-color{
+			width: 200px;
+			height: 100px;
+			border: 3px solid transparent;
+			border-radius: 15px 0 15px 0;
+			-webkit-border-top-colors: #a0a #909 #808;
+			-webkit-border-right-colors: #a0a #909 #808;
+			-webkit-border-bottom-colors: #a0a #909 #808;
+			-webkit-border-left-colors: #a0a #909 #808;
+		}
+		.bor-color+div{
+			height: 200px;
+			width: 200px;
+			border:16px solid;
+			border-image: -webkit-linear-gradient( red, blue, yellow, black, white, green) 10 1;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="bor-color"></div>
+	<div></div>
+</body>
+</html>

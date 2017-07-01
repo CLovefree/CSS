@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>8-伸缩布局盒模型flex属性</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.flex-container{
+			width: 960px;
+			margin:20px auto;
+			min-height: 300px;
+			color: #fff;
+			font-weight: bold;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row nowrap;
+			flex-flow: row nowrap;
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			-webkit-align-items: stretch;
+			align-items: stretch;
+		}
+		.flex-container>div{
+			padding: 10px;
+			outline: 1px solid black;
+			text-align: center;
+			line-height: 8em;
+		}
+		.flex-container>div:nth-child(1){
+			background-color: #22eda3;
+			-webkit-flex: 1 200px;
+			flex: 1 200px;
+		}
+		.flex-container>div:nth-child(2){
+			background-color: #27aee8;
+			-webkit-flex: 2 400px;
+			flex: 2 400px ;
+		}
+		.flex-container>div:nth-child(3){
+			background-color: #22edea;
+			-webkit-flex: 1 200px;
+			flex: 1 200px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="flex-container">
+<div>Left Siderbar Content
+     <br>
+     mmmmmmmmmmmm
+     <br>
+     jjjjjjjj
+     <br>
+     fffffffffffffffff
+     <br>
+     dddddddddddddd
+     <br>
+     llllllllllllllllllllllllllllll
+     <br>ssssss
+</div>
+<div>Main COntain</div>
+<div>Right Sidebar Content</div>
+</div>
+	
+</body>
+</html>

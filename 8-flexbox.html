@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伸缩布局盒模型flex-flow属性</title>
+<style type="text/css" media="screen">
+*{
+margin:0;
+padding:0;
+}
+.flex-container{
+	border: 10x solid #ccc;
+	margin: 50px;
+	background-color: #9de;
+	height: 300px;
+	width: 560px;
+	/* 声明伸缩容器 */ 
+	display: flex;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-align-items: start;
+	align-items: start;
+}
+.flex-container>div{
+	width: 100px;
+	min-height: 100px;
+	border: 1px solid #ccc;
+	margin: 5px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100px;
+	color: #fff;
+	font-weight: bold;
+}
+.flex-container>div:nth-child(1){
+	background-color: #22eda3;
+	-webkit-align-self: flex-start;
+	align-self: flex-start;
+}
+.flex-container>div:nth-child(2){
+	background-color: #95ed22;
+	-webkit-align-self: center;
+	align-self: center;
+}
+.flex-container>div:nth-child(3){
+	background-color: #22edea;
+	-webkit-align-self:flex-end;
+	align-self:flex-end;
+}
+.flex-container>div:nth-child(4){
+	background-color: #27aee8;
+	-webkit-align-self:baseline;
+	align-self:baseline;
+}
+.flex-container>div:nth-child(5){
+	background-color: #aee886;
+	-webkit-align-self:stretch;
+	align-self:stretch;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="flex-container">
+       <div>flex-start</div>
+       <div>center</div>
+       <div>flex-end</div>
+       <div>baseline</div>
+       <div>stretch</div>
+    </div>
+	
+</body>
+</html>
