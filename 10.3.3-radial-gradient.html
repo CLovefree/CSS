@@ -7,20 +7,142 @@
 		*{
 			margin: 0;padding: 0;
 		}
+		div{
+			box-sizing: border-box;
+			padding: 30px;
+		}
 		.item1{
 			width: 400px;height: 300px;
 			margin: 50px auto;
 			border: 5px solid hsla(60,50%,80%,.8);
-			background-image: -webkit-radial-gradient(hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
-			background-image: radial-gradient(hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
+			background-image: -webkit-radial-gradient(hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(hsla(120,70%,60%,.9),hsla(360,60%,70%,.9));
 		}
+		.item2{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(circle,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(circle,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+		}
+		.item3{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(ellipse,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(ellipse,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+		}
+		.item4{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(50px 150px at 200px 150px,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(50px 150px at 200px 150px,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+						/* 圆心在200px 150px,半径为50px和150px */
+			}
+		.item5{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(200px 200px at 200px 150px,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(200px 200px at 200px 150px,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+						/* 圆心在200px 150px,半径为200px */
+			}
+			.item6{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(80% 20% at 30% 60%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(80% 20% at 30% 60%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+						/* 圆心在200px 150px,半径为200px */
+			}
+			.item7{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(circle at center,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(circle at center,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			}
+			.item8{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(circle at top,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(circle at top,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			}
+			.item9{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(circle at top left,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(circle at top left,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			}
+			.item10{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(2em 4em ellipse,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(2em 4em ellipse,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			}
+			/*--------同理可得-------------- 半径-形状-圆心8em circle at top圆心在top的圆形径向渐变，半径为5em */
+            p{
+            	text-align: center;
+            	font-size: 30px;
+            }
+            .item11{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(closest-side circle at 50% 75%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(closest-side circle at 50% 75%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			}
+			.item12{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(closest-corner circle at 50% 75%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(closest-corner circle at 50% 75%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			}
+			.item13{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(farthest-side ellipse at 30% 75%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			background-image: radial-gradient(farthest-side ellipse at 30% 75%,hsla(120,70%,60%,.9),hsla(360,70%,60%,.9));
+			}
+			.item14{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(red,green,blue);
+			background-image: radial-gradient(red,green,blue);
+			}
+			.item15{
+			width: 400px;height: 300px;
+			margin: 50px auto;
+			border: 5px solid hsla(60,50%,80%,.8);
+			background-image: -webkit-radial-gradient(red 20%,green 50%,blue 80%);
+			background-image: radial-gradient(red 20%,green 50%,blue 80%);
+			}
+
 	</style>
 </head>
 <body>
-	<div class="item1"></div>
-	<div class="item2"></div>
-	<div class="item3"></div>
-	<div class="item4"></div>
-	<div class="item5"></div>
+	<div class="item1">1.</div>
+	<div class="item2">2.圆形渐变</div>
+	<div class="item3">3.椭圆渐变</div>
+	<div class="item4">4.垂直椭圆径向渐变</div>
+	<div class="item5">5.圆心相同，内外半径大小相同</div>
+	<div class="item6">6.椭圆径向渐变使用persentage</div>
+	<div class="item7">7.渐变中心定位在容器中心点</div>
+	<div class="item8">8.渐变中心定位在容器顶边中心.与at50% 0%等效</div>
+	<div class="item9">9.渐变中心定位在左边顶角,与at0 0 等效</div>
+	<div class="item10">10.制作椭圆形径向渐变，主要半径2em次要半径4em</div>
+	<p>关键词设置</p>
+	<div class="item11">closest-side</div>
+	<div class="item12">closest-coner</div>
+	<div class="item13">farthest-side</div>
+	<div class="item14">三色渐变</div>
+	<div class="item15">三色渐变</div>
 </body>
 </html>
