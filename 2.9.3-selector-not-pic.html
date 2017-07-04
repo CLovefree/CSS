@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>改变图片效果</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			width: 1034px;
+			margin: 20px auto;
+			background: #ddd;
+			letter-spacing: -4px;
+			word-spacing: -4px;
+			font-size: 0;
+		}
+		li{
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			list-style: none outside none;
+			margin: 5px;
+			font-size: 16px;
+			letter-spacing: normal;
+			word-spacing: normal;
+			width: 200px;
+			height: 200px;
+			position: relative;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		.gallery li:nth-child(2){
+			-webkit-filter: grayscale(1);
+		}
+		.gallery li:nth-child(3){
+			-webkit-filter: sepia(1);
+		}
+		.gallery li:nth-child(4){
+			-webkit-filter:saturate(0.5);
+		}
+		.gallery li:nth-child(5){
+			-webkit-filter: hue-rotate(90deg);
+		}
+		.gallery li:nth-child(6){
+			-webkit-filter:invert(1);
+		}
+		.gallery li:nth-child(7){
+			-webkit-filter:opacity(0.2);
+		}
+		.gallery li:nth-child(8){
+			-webkit-filter:blur(1px);
+		}
+		.gallery li:nth-child(9){
+			-webkit-filter:drop-shadow (5px 5px 10px #ccc);
+		}
+		.gallery li:nth-child(10){
+			-webkit-filter:saturate(6) hue-rotate(361deg) brightness(0.9);
+		}
+		.gallery:hover li:not(:hover){
+			-webkit-filter:blur(2px) grayscale(1);
+			opacity: .7;
+		}
+		.img-effect{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="gallery">
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">grayscale</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">grayscale(1)</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">sepia(1);</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">saturate(0.5);</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">hue-rotate(90deg)</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">invert(1)</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">opacity(0.2)</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">blur(1px)</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">drop-shadow (5px 5px 10px #ccc)</span></li>
+		<li><img src="pic/yellowman200.jpg" alt="小黄人"><span class="img-effect">webkit-filter:saturate(6) hue-rotate(361deg) brightness(0.9)</span></li>
+	</ul>
+</body>
+</html>
