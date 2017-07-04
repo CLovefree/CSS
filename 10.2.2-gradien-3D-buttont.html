@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS制作渐变按钮</title>
+	<style type="text/css">
+		/* 加载Google web字体 */
+		@import url(http://fonts.googleeapis.com/css?family=Arvo);
+		body {
+			background: #f8fcd4;
+			/* 制作背景渐变效果 */
+			background: -webkit-linear-gradient(to bottom,#f8fcd4 19%.#dbfacb 100%);
+			background-attachment: fixed;
+		}
+		body>div{
+			text-align: center;
+			display: block;
+			width: 800px;
+			margin: 50px auto;
+		}
+		/* 加载本地字体制作图标 */
+		/* -------------------------自己加载未完成------------------------------ */
+		/* 设置按钮基本样式 */
+		.button,.button-beveled{
+			font-family: Arial,Helvetica,sans-serif;
+			font-size: 13px;
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			text-align: center;
+			padding: 7px 20px 9px;
+			margin: .5em .5em .5em 0;
+			cursor: pointer;
+			/* 设置按钮文本阴影效果 */
+			text-shadow: 0 1px 1px rgba(0,0,0,4);
+			text-transform: capitalize;
+			/* 设置按钮过度动画效果 */
+			transition: 0.1s linear;
+		}
+/*		.button{
+			border-radius: 2px;
+			box-shadow: inset rgba(255,255,255,0.3) 1px 1px 0;
+		}
+		.button:hover,.button-beveled:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+		.button:active{
+			box-shadow: inset rgba(0,0,0,0.4) 0px 0px 6px; 
+		}
+		.rounded{
+			border-radius: 20px;
+		}*/
+		.orange{
+			background: rgb(255,183,0);
+			/* 制作渐变效果 */
+			background: -webkit-linear-gradient(180deg, rgba(255,183,0,1) 0%, rgba(255,140,0,1) 100%);
+			background: linear-gradient(180deg, rgba(255,183,0,1) 0%, rgba(255,140,0,1) 100%);
+            bottom: 1px solid #e59500;           
+		}
+		.orange:hover{
+			background: rgb(255,203,72);
+			/* 制作渐变效果 */
+			background-image:-webkit-linear-gradient(-90deg ,red,yellow,orange,green,blue,indigo,violet);
+			background-image: linear-gradient(-90deg ,red,yellow,orange,green,blue,indigo,violet);
+            bottom: 1px solid #e59500; 
+		}
+		/* 制作3D立体按钮基本样式 */
+		/* -----------------两层阴影制作立体按钮--------------------------- */
+		.button-beveled{
+			vertical-align: top;
+			border-radius: 4px;
+			border:none;
+			padding: 10px 25px 12px;
+			box-shadow: #c46d00 0 6px 0px ,rgba(0,0,0,0.3) 0 10px 3px;
+		}
+		/* -------------3D按钮的点击状态效果----------------- */
+		.button-beveled:active{
+			position: relative;
+			top:5px;
+			box-shadow: #c46d00 0 3px 0px ,rgba(0,0,0,0.2) 0 6px 3px;
+		}
+	</style>
+</head>
+<body>
+	<div date-for="beveled">
+		<div>
+			<a href="javascript:void(0)" class="button-beveled orange"><span class="refresh"></span>Refresh</a>
+			<a href="javascript:void(0)" class="button-beveled orange"><span class="shuffle"></span>Shuffle</a>
+			<a href="javascript:void(0)" class="button-beveled orange"><span class="preview"></span>Preview</a>
+			<a href="javascript:void(0)" class="button-beveled orange"><span class="tea"></span>Tea</a>
+			<a href="javascript:void(0)" class="button-beveled orange"><span class="wifi"></span>Wifi</a>
+			<a href="javascript:void(0)" class="button-beveled orange"><span class="locator"></span>Locator</a>
+		</div>
+	</div>
+</body>
+</html>
