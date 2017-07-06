@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11.2.3transform-3D</title>
+	<style type="text/css">
+		/* 基本样式 */
+		body{
+			background-image: -webkit-linear-gradient(to bottom,#ccffcc,#ccffff);
+			background-image: linear-gradient(to bottom,#ccffcc,#ccffff);
+		}
+		section{
+			width: 90%;
+			margin: 50px auto;
+			text-align: center;
+			border:2px solid red;
+			}
+		section h2{
+			font-size: 40px;
+			color: #d00000;
+			font-weight: bolder;
+		}
+		section div{
+			position: relative;
+			height: 800px;
+		}
+		section img{
+			position: absolute;
+			top: 100px;
+			left: 50%;
+			margin-left: -200px;
+
+		}
+		/* 3D样式 */
+
+		.demo01{
+			/* -----------重点---------- */
+			transform-style: preserve-3d;
+			perspective: 700px;
+		}
+		.demo01 img:nth-child(1){
+			opacity: 0;
+			z-index: 1;
+		}
+		.demo01 img:nth-child(2){
+			opacity: .5;
+			transform: rotateY(40deg) rotateX(0deg);
+			z-index: 2;
+		}
+        /* ---------------正方体---------------------------------------------------------- */
+        .wrapper{
+        	width: 50%;
+        	float: left;
+        	height: 300px;
+        }
+        .cube{
+        	font-size: 4em;
+        	width: 2em;
+        	margin: 1.5em auto;
+        	transform-style: preserve-3d;
+        	transform: rotateX(-40deg) rotateY(30deg);
+        }
+        .side{
+        	position: absolute;
+        	width: 2em;
+        	height: 2em;
+        	background: rgba(255,99,71,0.6);/* 面的颜色 */
+        	border:1px solid rgba(0,0,0,0.5);
+        	color: white;/* ------------------字的颜色 */
+        	text-align: center;
+        	line-height: 2em;
+        }
+        .front{
+        	transform: translateZ(1em);
+        }
+        .top{
+        	transform: rotateX(90deg) translateZ(1em) ;
+        }
+        .right{
+        	transform: rotateY(90deg) translateZ(1em) ;
+        }
+        .left{
+        	transform: rotateY(-90deg) translateZ(1em);
+        }
+        .bottom{
+        	transform: rotateX(-90deg) translateZ(1em) ;
+        }
+        .back{
+        	transform: rotateY(-180deg) translateZ(1em);
+        }
+        .w1{
+        	perspective: none;
+        }
+        .w2{
+        	perspective: 250px;
+        	perspective-origin: top center;
+        }
+	</style>
+</head>
+<body>
+	<section>
+        <h2>prespective属性：设置查看位置</h2>
+		<div class="demo01">
+			<img src="pic/king.jpg" alt="pooker">
+			<img src="pic/king.jpg" alt="pooker">
+		</div>
+	</section>
+	<div class="wrapper w2">
+		<div class="cube">
+			<div class="side front">1</div>
+			<div class="side back">6</div>
+			<div class="side right">4</div>
+			<div class="side left">3</div>
+			<div class="side top">5</div>
+			<div class="side bottom"> 2</div>
+		</div>
+	</div>
+	<div class="wrapper w1">
+		<div class="cube">
+			<div class="side front">1</div>
+			<div class="side back">6</div>
+			<div class="side right">4</div>
+			<div class="side left">3</div>
+			<div class="side top">5</div>
+			<div class="side bottom"> 2</div>
+		</div>
+	</div>
+</body>
+</html>
