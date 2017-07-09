@@ -134,10 +134,11 @@ box-sizing:border-box 　　不改变盒模型大小而改变padding和border
 - visible和hidden
 
 
+### CSS2D变形
 
+translate(tx,ty)
 
-
-  ​
+ty为0 时可以省略不写  ​
 
   ​
 
