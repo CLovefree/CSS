@@ -136,11 +136,14 @@ box-sizing:border-box 　　不改变盒模型大小而改变padding和border
 
 ### CSS2D变形
 
-translate(tx,ty)
+#### translate(tx,ty)
 
-ty为0 时可以省略不写  ​
+- ty为0 时可以省略不写；
+- tx右为正值，ty下！！！为正值！
 
-  ​
+#### scale（sx,sy）  
+
+scale（1.5）和scale（1.5，1.5）  ​效果相同
 
 
 
