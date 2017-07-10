@@ -6,6 +6,57 @@ problems：13.5动画不成功，待解决
 
 主要是本书的实战体验部分练习
 
+## 第四章：CSS背景
+
+background-color
+
+background-image
+
+background-repeat
+
+background-position(0 0)//(0% 0%)//(left top)/*不加逗号*/
+
+background-attachment:scoll//fixed
+
+fixed一般运用在html和body标签上，其他标签达不到效果
+
+background-origin：绘制起点   决定border-position的起始位置
+
+- padding-box
+- border-box
+- content-box
+
+background-clip:背景图片的显示范围
+
+background-size：背景图片尺寸大小
+
+- auto原始宽高
+- length取具体的整数值如px
+- persentage相对于元素的宽度来计算
+- cover放大铺满整个容器但是会失真；同时一个设置position在center
+- contain保持背景图的长款比例，放到宽度高度正好适应所定义背景容器区域
+
+background-break：内联元素的背景图片进行平铺时的循环方式
+
+- 浏览器支持力度低，一般不用
+
+### 多背景属性
+
+制作花边边框
+
+## 第五章：CSS文本
+
+text-shadoe：制作3D立体文本
+
+text-overflow：clip//ellipisis
+
+实现文本溢出时显示省略标记。。。，需要
+
+- overflow：hidden
+- white-space：nowrap强制文本在一行显示
+- text-overflow:ellipisis
+- 定义容器宽度
+
 ## 第十章：CSS渐变
 
 text-transform: capitalize          **首字母大写**
@@ -373,4 +424,23 @@ font-style:                 }
 ②在@font-face中显示指定自定义字体名称以及引用自定义字体的字体来源；
 
 #### 声明字体来源
+
+```css
+@font-face {
+	font-family: 'YourWebFontName';
+	src: url('YourWebFontName.eot'); /* IE9 Compat Modes */
+	src: url('YourWebFontName.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('YourWebFontName.woff') format('woff'), /* Modern Browsers */
+             url('YourWebFontName.ttf')  format('truetype'), /* Safari, Android, iOS */
+             url('YourWebFontName.svg#YourWebFontName') format('svg'); /* Legacy iOS */
+   }
+```
+
+（ 如何将字体转换成所有格式字体呢？
+
+Fontsquirrel字体转换生成器
+
+Codeandmore字体转换生成器）
+
+### 将图标转换成web字体
 
