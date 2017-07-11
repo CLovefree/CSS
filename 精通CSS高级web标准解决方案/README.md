@@ -206,5 +206,19 @@ a:hover sapn{diaplay:block;position......}
 
 ## 第六章：对表单和数据表格应用样式
 
+表格特有元素
+
+1、caption标题、summery描述
+
+2、thead、tbody、tofoot
+
+3、行和列标题应使用th而不是td,所有的列标题放在thead中
+
+4、表格标题可以设置scope为row或者col,定义他们是列标题还是行标题
+
+​    <th id="" scope="col">名字</th>
+
+5、col和colgroup
+
 
 
