@@ -46,16 +46,37 @@ background-break：内联元素的背景图片进行平铺时的循环方式
 
 ## 第五章：CSS文本
 
-text-shadoe：制作3D立体文本
+text-shadow：制作3D立体文本
 
 text-overflow：clip//ellipisis
 
 实现文本溢出时显示省略标记。。。，需要
 
 - overflow：hidden
+
 - white-space：nowrap强制文本在一行显示
+
 - text-overflow:ellipisis
+
 - 定义容器宽度
+
+  ​
+
+text-transform:定义文本大小写
+
+none(默认)uppercase(大写)lowercase(小写)capitalize(首字大小写)
+
+word-spacing   词与词的间距
+
+letter-spacing字符之间的间距
+
+vertical-align文本的垂直对齐方向sub、supper、bottom、top、middle、text-bottom（行内文本底端对齐）
+
+text-indent
+
+white-space文字与文字之间的空白符间距*?*
+
+text-shadow
 
 ## 第十章：CSS渐变
 
@@ -276,16 +297,16 @@ animation
 
 ②在animation调用关键帧动画
 
-| 值                           | 描述                      |
-| --------------------------- | :---------------------- |
-| *animation-name*            | 规定需要绑定到选择器的 keyframe 名称 |
-| *animation-duration*        | 规定完成动画所花费的时间，以秒或毫秒计。    |
-| *animation-timing-function* | 规定动画的速度曲线。              |
-| *animation-delay*           | 规定在动画开始之前的延迟。           |
-| *animation-iteration-count* | 规定动画应该播放的次数。            |
-| *animation-direction*       | 规定是否应该轮流反向播放动画。         |
-| *animition-play-state*      | 控制动画的播放状态               |
-| *animition-fill-mode*       | 设置动画的时间外属性              |
+| 值                         | 描述                      |
+| ------------------------- | :---------------------- |
+| animation-name            | 规定需要绑定到选择器的 keyframe 名称 |
+| animation-duration        | 规定完成动画所花费的时间，以秒或毫秒计。    |
+| animation-timing-function | 规定动画的速度曲线。              |
+| animation-delay           | 规定在动画开始之前的延迟。           |
+| animation-iteration-count | 规定动画应该播放的次数。            |
+| animation-direction       | 规定是否应该轮流反向播放动画。         |
+| animition-play-state      | 控制动画的播放状态               |
+| animition-fill-mode       | 设置动画的时间外属性              |
 
 1. 设置动画播放次数：正数或者可以带小数点；infinite无限次
 2. 动画播放方向：normal向前播放；alternate偶数次向前，奇数次反向
@@ -349,7 +370,7 @@ animation:myfirst 5s linear 2s infinite alternate;
 
 媒体特性Media Query能在不同的条件下使用不同的样式，使页面在不同终端设备下达到不同的渲染效果
 
-@media 媒体类型 and（媒体特性）{你的样式}
+ **@media 媒体类型 and（媒体特性）{你的样式}**
 
 - @media screen and(max-width:480px){
 
