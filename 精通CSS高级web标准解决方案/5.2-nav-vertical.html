@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5.2创建垂直导航条</title>
+	<style type="text/css">
+	    nav{
+	    	margin-top: 100px;
+	    	margin-left: 50px;
+	    }
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		ul a{
+			display: block;
+			width: 200px;
+			height: 39px;
+			line-height: 39px;
+			color: #000;
+			text-decoration: none;
+			background: url(images/nav.jpg) no-repeat left bottom;
+			text-indent: 50px;
+			transition: 0s;
+		}
+		ul li:first-of-type a{
+			height: 40px;
+			line-height: 40px;
+		}
+		ul a:hover{
+			background-position: right bottom;
+			color: #fff;
+			transition: 0.2s;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li><a href="">ABOUT</a></li>
+			<li><a href="">OUR SERVICES</a></li>
+			<li><a href="">OUR WORK</a></li>
+			<li><a href="">NEWS</a></li>
+			<li><a href="">CONTACT</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
