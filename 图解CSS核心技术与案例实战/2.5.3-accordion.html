@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2.5.3制作手风琴效果</title>
+	<style type="text/css">
+		.accordionMenu{
+			background: #fff;
+			color: #424242;
+			font:12px Arial,Verdana,sans-serif;
+			margin: 0 auto;
+			width: 500px;
+			padding: 10px;
+		}
+		.accordionMenu .menuSection{
+			margin: 5px 0;
+			padding: 0;
+			position: relative;
+		}
+		.accordionMenu .menuSection span{/* 制作向下的三角效果 */
+			border:5px solid #fff;
+			border-color: #fff transparent transparent;
+			content: "";
+			height: 0;
+			position: absolute;
+			right: 10px;
+			top: 15px;
+			width: 0;
+			display: block;
+		}
+		input{
+			display: none;
+		}
+		.accordionMenu .menuSection lable a{/* 制作手风琴的标题栏效果 */
+			background: #8f8f8f;
+			background:-moz-linear-gradient (top,#cecece,#8f8f8f);
+			background:-webkit-linear-gradient (top,#cecece,#8f8f8f);
+			background:-webkit-gradient(linear,left top,left bottom,from(#cecece), to(#8f8f8f));
+			background:-o-linear-gradient (top,#cecece,#8f8f8f);
+			background:linear-gradient(to top,#cecece,#8f8f8f);
+			display: block;
+			color: #424242;
+			border-radius: 5px;
+			font-weight: normal;
+			font-size: 13px;
+			padding: 10px 10px;
+			text-shadow: 2px 2px 2px #aeaeae;
+			text-decoration: none;
+			margin: 0;
+		}
+		
+		.accordionMenu .menuSection lable a:hover{
+			background: #2288dd;
+			background:-moz-linear-gradient (top,#6bb2ff,#2288dd);
+			background:-webkit-linear-gradient (top,#6bb2ff,#2288dd);
+			background:-webkit-gradient(linear,left top,left bottom,from(#6bb2ff), to(#2288dd));
+			background:-o-linear-gradient (top,#6bb2ff,#2288dd);
+			background:linear-gradient(to top,#6bb2ff,#2288dd);
+			color: #fff;
+		}
+		.accordionMenu .menuSection p{
+			margin: 0;
+			height: 0px;
+			overflow: hidden;
+			padding: 0px;
+			-webkit-transition: height 0.5s ease-in;
+			-o-transition: height 0.5s ease-in;
+			-moz-transition: height 0.5s ease-in;
+			transition: height 0.5s ease-in;
+		}
+		input:checked~p{
+			height: 100px;
+		}
+/*		.accordionMenu .menuSection .input:checked~p{
+			height: 100px;
+		*/}
+/*		.input:checked .lable:after{
+			border-color: transparent transparent transparent #fff;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="accordionMenu">
+		<div class="menuSection" id="brand">
+			<lable for="menu1"><a href="#">Brand</a></lable>
+			<input type="radio" id="munu1" name=""><span></span>
+			<p>饿了吗</p>
+		</div>
+		<div class="menuSection" id="promotion">
+			<lable for="menu2"><a href="#">Promotion</a></lable>
+			<input type="radio" id="munu2" name=""><span></span>
+			<p>去做饭吧</p>
+		</div>
+		<div class="menuSection" id="event">
+			<lable for="menu3"><a href="#">Event</a></lable>
+			<input type="radio" id="munu3" name=""><span></span>
+			 <p>我也吃点</p>
+		</div>
+	</div>
+</body>
+</html>

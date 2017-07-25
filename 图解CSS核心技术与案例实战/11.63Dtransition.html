@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11.6 3D变形制作产品信息展示</title>
+	<style type="text/css">
+		.wrapper{
+			display: inline-block;
+			width: 310px;
+			height: 100px;
+			vertical-align: top;
+			margin: 1em 1.5em 2em 0;
+			cursor: pointer;
+			position: relative;
+			font-family: Tahoma,Arial;
+			perspective: 40000px;
+		}
+		.item{
+			height: 100px;
+			transform-style: preserve-3d;
+			transition: transform .6s;
+			margin-top: 50px;
+		}
+		.item img{
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 290px;
+			height: 80px;
+			border-radius: 3px;
+			box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+			transform: translateZ(50px);
+			transition: all .6s;
+		}
+		.item .information{
+			display: block;
+			position: absolute;
+			top: 0;
+			height: 81px;
+			width: 290px;
+			text-align: center;
+			line-height: 31px;
+			border-radius: 15px;
+			padding: 10px;
+			margin: 0;
+			font-size: 12px;
+			text-shadow: 1px 1px 1px  rgba(255,255,255,.5);
+			box-shadow: none;
+			background: rgba(236,241,244);
+			background: linear-gradient(to bottom,rgba(236,241,244) 0%,rgba(190,202,217,1) 100%);
+			transform: rotateX(-90deg) translateZ(50px);
+			transition: all .6s;
+		}
+		.item:hover{
+			transform: translateZ(-50px) rotateX(95deg);
+		}
+		.item:hover img{
+			box-shadow: none;
+			border-radius: 15px;
+		}
+		.item:hover .information{
+			box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+			border-radius: 3px;
+		}
+		{
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper"><!-- 舞台3D视点 -->
+		<div class="item"><!-- 容器包裹图片和产品信息 -->
+			<img src="pic/sbg1.jpg" alt="">
+			<span class="information">
+				<strong>Contact Form</strong>The easiest way to add a contact from to your shop.
+			</span>
+		</div>
+		<div class="item"><!-- 容器包裹图片和产品信息 -->
+			<img class="img1" src="pic/sbg2.jpg" alt="">
+			<span class="information information1">
+				<strong>Contact Form</strong>The easiest way to add a contact from to your shop.
+			</span>
+		</div>
+		<div class="item"><!-- 容器包裹图片和产品信息 -->
+			<img class="img1" src="pic/sbg3.jpg" alt="">
+			<span class="information information1">
+				<strong>Contact Form</strong>The easiest way to add a contact from to your shop.
+			</span>
+		</div>
+		<div class="item"><!-- 容器包裹图片和产品信息 -->
+			<img class="img1" src="pic/sbg4.jpg" alt="">
+			<span class="information information1">
+				<strong>Contact Form</strong>The easiest way to add a contact from to your shop.
+			</span>
+		</div>
+	</div>
+</body>
+</html>
