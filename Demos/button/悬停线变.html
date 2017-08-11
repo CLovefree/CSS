@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		html {
+  -moz-osx-font-smoothing: grayscale;/* Gecko内核的浏览器针对ios系统制定了一个渲染规则 */
+  -webkit-font-smoothing: antialiased;/* webkit在自己的渲染引擎中增加的对字体抗锯齿的调整 */
+  text-rendering: optimizelegibility;/* Gecko内核的浏览器将强调可读性和几何精度，同时绘制文本渲染速度，启用字距和连写。*/
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(right top, #3FC1C9, #364F6B);
+  background: linear-gradient(to left bottom, #3FC1C9, #364F6B);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  display: inline-block;
+  background: none;
+  border: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: inherit;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F5F5F5;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  box-shadow: inset 0 0 0 4px #F5F5F5, 0 0 1px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer !important;
+}
+button:before, button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+button:before {
+  border-color: #FC5185 transparent;
+  -webkit-transform: skewX(-91deg);
+          transform: skewX(-91deg);
+}
+button:after {
+  border-color: transparent #FC5185;
+  -webkit-transform: skewY(40deg);
+          transform: skewY(40deg);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+button:hover {
+  color: #FC5185;
+}
+button:hover:before, button:hover:after {
+  -webkit-transform: none;
+          transform: none;
+}
+	</style>
+</head>
+<body>
+	<button>Button</button>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>11.2CSS制作旋转icons</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+		/* 基本样式 */
+		body{
+			background: #ccfff;
+			background-image: 
+			-webkit-radial-gradient(#cccccc 15%,transparent 16%);
+			-webkit-radial-gradient(#cccccc 15%,transparent 16%);
+			-webkit-radial-gradient(#99cccc 15%,transparent 20%);
+			-webkit-radial-gradient(#99cccc 15%,transparent 20%);
+			background-image: 
+			-webkit-radial-gradient(#cccccc 15%,transparent 16%);
+			-webkit-radial-gradient(#cccccc 15%,transparent 16%);
+			-webkit-radial-gradient(#99cccc 15%,transparent 20%);
+			-webkit-radial-gradient(#99cccc 15%,transparent 20%);
+			background-position: 0 0px,8px 8px,0 1px,8px 9px;
+			-webkit-background-size: 16px 16px;
+			background-size: 16px 16px;
+		}
+		section{
+			margin: 0px auto;
+			width: 860px;
+			text-align: center;
+			padding: 50px;
+		}
+		section ul{
+			display: block;
+			width: 600px;
+			height: 100px;
+			margin: 30px auto;
+		}
+		section li{
+			float: left;
+			margin-left: 30px;
+		}
+		section li:first-child{
+			margin-left: 0;
+		} 
+		/* 设置动画效果 */
+
+		#icons1 img,#icons2 img{
+			transition: all 0.8s ease-in-out;
+		}
+		/* 设置变形，顺时针并放大 */
+		#icons1 img:hover{
+			transform: rotate(360deg) scale(1.5);
+		}
+		/* 设置变形，逆时针病缩小 */
+		#icons2 img:hover{
+			transform: rotate(-360deg) scale(0.7);
+		}
+	</style>
+</head>
+<body>
+    <section class="icons">
+	<h1>顺时针旋转360度放大1.2倍</h1>
+	<ul id="icons1">
+		<li><a href="#"><img src="pic/icon01.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon02.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon03.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon04.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon05.png" alt=""></a></li>
+	</ul>
+	<div class="clearfloat"></div>
+	<h1>逆时针旋转360度缩小0.7倍</h1>
+	<ul id="icons2">
+		<li><a href="#"><img src="pic/icon01.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon02.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon03.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon04.png" alt=""></a></li>
+		<li><a href="#"><img src="pic/icon05.png" alt=""></a></li>
+	</ul>
+	<div class="clearfloat"></div>
+	</section>
+</body>
+</html>
