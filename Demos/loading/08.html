@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loading加载效果08</title>
+	<style type="text/css">
+		.loading{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -50px;
+		}
+		.loading .loading-border{
+			width: 100px;
+			height: 100px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border-radius: 50%;
+			border:6px solid #2196f3;
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+			animation: Loading-bor 1.2s infinite ease;
+		}
+		.loading .loading-circle{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #2196f3;
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			animation: Loading-cir 1.2s infinite ease;
+		}
+		@keyframes Loading-bor{
+			from{transform: rotate(0);}
+			50%{transform: rotate(179.99deg);}
+			to{transform: rotate(360deg);}
+		}
+		@keyframes Loading-cir{
+			from{transform: scale(0.2);}
+			50%{transform: scale(1.0);}
+			to{transform: scale(0.2);}
+		}
+	</style>
+</head>
+<body>
+	<div class="loading">
+		<div class="loading-border"></div>
+		<div class="loading-circle"></div>
+	</div>
+</body>
+</html>

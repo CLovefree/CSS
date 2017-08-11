@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>filter:drop-shadow实现尖角带阴影的提示面板效果实例页面</title>
+	<style type="text/css">
+	/*body{
+		background: #d4d4d4;
+	}
+	.box {
+    margin: 40px; 
+    padding: 50px;
+    background-color: #fff;
+    position: relative;
+    font-size: 24px;
+    }
+    .cor {
+        position: absolute;
+        left: -40px;
+        widtd: 0; 
+        height: 0;
+        overflow: hidden;
+        border: 20px solid transparent;
+        border-right-color: #fff;
+    }
+    .box-shadow {
+        box-shadow: 5px 5px 10px black;
+    }
+    .drop-shadow{
+    	filter:drop-shadow(5px 5px 10px black); 
+    }*/
+    body{
+    	background-color: #ddd;
+    }
+    	.box{
+    		margin: 40px;
+    		padding: 40px;
+    		background-color: #fff;
+    		position: relative;
+    		font-size: 24px;
+    	}
+    	.cor{
+    		position: absolute;
+    		left: -40px;
+    		width: 0;
+    		height: 0;
+    		border: 20px solid transparent;
+    		border-right-color: #fff;
+    	}
+    	.box-shadow{
+    		box-shadow: 5px 5px 10px black;
+    	}
+    	.drop-shadow{
+    		filter: drop-shadow( 5px 5px 10px black);
+    	}
+	</style>
+</head>
+<body>
+	<div class="box box-shadow">
+		<i class="cor"></i>
+		box-shadow
+	</div>
+	<div class="box drop-shadow">
+		<i class="cor"></i>
+		fliter:drop-shadow
+	</div>
+</body>
+</html>

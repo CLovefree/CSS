@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loading动画效果2</title>
+	<style type="text/css">
+		.spinner{
+			width: 60px;
+			height: 60px;
+			background-color: #4BA600;
+			margin: 100px auto;
+			animation: rotateplane 1.2s infinite ease-in-out;
+			-webkit-animation: rotateplane 1.2s infinite ease-in-out;
+		}
+		@keyframes rotateplane{
+			0% {
+				transform: perspective(120px);
+				-webkit-transform: perspective(120px);
+			}
+			50% {
+				transform: perspective(120px) rotateX(-180.1deg);
+				-webkit-transform: perspective(120px) rotateX(-180.1deg);
+			}
+			100%{
+				transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+				-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			}
+		}
+		@webkit-keyframes rotateplane{
+			0% {
+				-webkit-transform: perspective(120px);
+			}
+			50% {
+				-webkit-transform: perspective(120px) rotateX(-180.1deg);
+			}
+			100%{
+				-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="spinner"></div>
+</body>
+</html>

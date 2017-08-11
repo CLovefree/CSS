@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myCanvas</title>
+	<style type="text/css">
+		#myCanvas{
+			border:1px solid ;
+			width: 200px;
+			height: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas"></canvas>
+	<script type="text/javascript">
+		var c=document.getElementById('myCanvas');
+		var context=c.getContext("2d");
+		context.fillStyle="#ff00ff";
+		context.fillRect(50,25,100,50);//位置和尺寸
+
+
+	</script>
+</body>
+</html>

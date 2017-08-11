@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loading动画效果4</title>
+	<style type="text/css">
+		.spinner{
+			width: 32px;
+			height: 32px;
+			margin: 100px auto;
+			position: relative;
+		}
+		.spinner>div{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #4BA600;
+			width: 30px;
+			height: 30px;
+			animation: cubemove 1.8s infinite ease-in-out;
+			-webkit-animation: cubemove 1.8s infinite ease-in-out;
+		}
+		.spinner div:first-child{
+
+		}
+		@keyframes cubemove{
+			25%{
+				transform: translateX(42px) rotate(-90deg) scale(0.5);
+			}
+			50%{
+				transform: translateX(42px) translateY(42px) rotate(-179deg);
+			}
+			50.01%{
+				transform: translateX(42px) translateY(42px) rotate(-180deg);
+			}
+			75%{
+				transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+			}
+			100%{
+				transform: rotate(-360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="spinner">
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

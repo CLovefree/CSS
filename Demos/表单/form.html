@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+	<style type="text/css">
+		form{
+			display: block;
+			line-height: 40px;
+			margin:20px 10px 100px;
+		}
+		input,select,textarea{
+			position: absolute;
+			left: 180px;
+			margin-top: 10px;
+		}
+		#a{
+			left:1em;
+		}
+		#b{
+			left: 250px;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="">
+		请输入email地址：<input type="email" name="user_email"><br/>
+		请输入网址：<input type="url" name="user_url"><br/>
+		请输入搜索关键词：<input type="search" name="search1"><br/>
+		请输入电话号码：<input type="tel" name="tel1"><br/>
+		请选择一种颜色：<input type="color" name="color"><br/>
+		请输入数字（1-20）：<input type="number" name="number1" min="1" max="20" step="4"><br/>
+		请输入数值（1-30）：<input type="range" name="range1" min="1" max="30"><br/>
+		<hr/>
+		请输入时间：<input type="datetime" name="datetime1"><br/>
+		请选择或输入时间：<input type="datetime-local" name="datetime-local1"><br/>
+		请选择或输入日期：<input type="date" name="date1"><br/>
+		请选择或输入月份：<input type="month" name="month1"><br/>
+		请选择年份和周数：<input type="week" name="week1"><br/>
+		请选择或输入时间：<input type="time" name="time1" step="5" value="09:00"><br/>
+		<hr/>
+		请选择性别：<br/>
+					<input type="radio" name="sex" value="male" /> Male<br/>
+				    <input type="radio" name="sex" value="female" /> Female<br/>
+		请选择你想要的：<br/>
+					<input type="checkbox" name="">Bike<br/>
+					<input type="checkbox" name="">Car<br/>
+					<input type="checkbox" name="">Train<br/>
+		<hr/>
+		请输入喜欢的城市名称：<input type="text" name="city1" id="city" list="citylist" placeholder="QingDao"/>
+			<datalist id="citylist">
+				<option value="QingDao">QingDao</option>
+				<option value="DaLian">DaLian</option>
+				<option value="YanTai">YanTai</option>
+				<option value="WeiHai">WeiHai</option>
+				<option value="QinHuangdao">QinHuangdao</option>
+			</datalist><br/>
+		请输入喜欢的数字：
+		<select>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		</select><br/>
+		多行文本输入框用法：
+		<textarea rows="4" cols="50" autofocus>&lt;textarea&gt; 标签定义多行的文本输入控件。文本区中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）</textarea>
+		<br/><br/>
+		<hr/>
+		<input type="submit" name="" value="提交">
+	</form>
+</body>
+</html>
